@@ -1,6 +1,6 @@
 # QApilot
  
-### 코드와 문서를 읽고, 테스트를 직접 설계·실행·분석까지 끝내는 All-in-One 통합 테스트 자동화 플랫폼
+### 코드와 문서를 읽고, 테스트를 직접 설계·실행·오류분석까지 끝내는 All-in-One 통합 테스트 자동화 플랫폼
  
 ---
  
@@ -46,9 +46,8 @@ QApilot은 코드와 문서를 읽어 **테스트 시나리오를 자동 생성*
 ---
  
 ## 시스템 아키텍처
- QApilot은 **웹 대시보드 → 중앙 API 서버(SpringBoot) → Agentic Pipeline(Layer 1~3) → 데이터 스토리지** 로 이어지는 구조이며, 외부의 **테스트 대상 시스템(SUT)** 을 직접 실행·검증합니다.
- 
-<img width="5944" height="4576" alt="image" src="https://github.com/user-attachments/assets/1a20a6d3-3e40-46eb-99af-af64d441248b" />
+ QApilot은 **웹 대시보드 → 중앙 API 서버(SpringBoot) → Agentic Pipeline(Layer 0~3) → 데이터 스토리지** 로 이어지는 구조이며, 외부의 **테스트 대상 시스템(SUT)** 을 직접 실행·검증합니다.
+ <img width="8312" height="5232" alt="image" src="https://github.com/user-attachments/assets/bf2ac491-6183-42ed-bcc7-9e5754bb05be" />
 
  
 ### Agentic Pipeline (LangGraph 기반, 3 Layer · 8 Agent + 6 Tool)
@@ -125,16 +124,9 @@ QApilot은 코드와 문서를 읽어 **테스트 시나리오를 자동 생성*
  
 ---
  
-## 📂 Repositories
- 
-| Repository | 설명 |
-|---|---|
-| [`system-under-test`](https://github.com/skala-QApilot/system-under-test) | QApilot의 기능 검증/시연을 위한 테스트 대상 시스템(SUT, 통신사 셀프케어 컨셉 서비스) |
- 
----
- 
 ## 🏆 성과
- 
+
+- 최우수상 수상 (1위) 
 - TC 3,000개 기준 **수동 테스트 대비 약 97% 테스트 공수 절감** 효과 도출
 ---
  
